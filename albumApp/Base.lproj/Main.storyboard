@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="albumApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ber-MU-hrc">
+                                <rect key="frame" x="16" y="95" width="343" height="339"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="339" id="C1B-ts-fEq"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxz-N5-kIz">
+                                <rect key="frame" x="28" y="483" width="139" height="84"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="djC-oG-AKT"/>
+                                    <constraint firstAttribute="width" constant="139" id="nNN-kn-Wgv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="&lt;&lt; Pre">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="preImageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e5P-x2-9ai"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4m5-Pq-l4B">
+                                <rect key="frame" x="207" y="483" width="139" height="84"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="0W2-gE-M75"/>
+                                    <constraint firstAttribute="width" constant="139" id="0ZM-Vn-U5k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Next &gt;&gt;">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextImageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="slg-AF-Unb"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JxE-S4-KyA">
+                                <rect key="frame" x="37" y="120" width="300" height="289"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="4m5-Pq-l4B" secondAttribute="trailing" constant="13" id="1dP-5U-Gpv"/>
+                            <constraint firstItem="Ber-MU-hrc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Lz7-uz-S5Q"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hxz-N5-kIz" secondAttribute="bottom" constant="100" id="Nep-fJ-Ohb"/>
+                            <constraint firstItem="hxz-N5-kIz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="O9T-pW-5uf"/>
+                            <constraint firstItem="Ber-MU-hrc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="OUC-Ij-cjI"/>
+                            <constraint firstItem="Ber-MU-hrc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="75" id="QNb-ca-81j"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4m5-Pq-l4B" secondAttribute="bottom" constant="100" id="XoE-qd-JuP"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4m5-Pq-l4B" secondAttribute="bottom" constant="100" id="mI2-et-uGt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hxz-N5-kIz" secondAttribute="bottom" constant="100" id="vOn-xr-5hc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="albumImageView" destination="Ber-MU-hrc" id="7Rk-Ma-luF"/>
+                        <outlet property="animationImageView" destination="JxE-S4-KyA" id="h1H-Ry-iXC"/>
+                        <outlet property="nextBtnUI" destination="4m5-Pq-l4B" id="gNA-xp-Tu7"/>
+                        <outlet property="preBtnUI" destination="hxz-N5-kIz" id="gIf-e0-LEj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="01.jpg" width="960" height="1280"/>
+    </resources>
+</document>
